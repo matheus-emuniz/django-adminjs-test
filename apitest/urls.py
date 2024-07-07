@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework import routers
 
-from posts.models import PostViewSet
+from posts.views import PostViewSet
 
 router = routers.SimpleRouter()
 router.register(r'posts', PostViewSet)
